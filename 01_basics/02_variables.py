@@ -1,4 +1,6 @@
-# VARIABEL & TIPE DATA DI PYTHON
+# VARIABEL & DATA TYPES
+
+# "type()" is a built-in Python function to check the data type of a variable.
 
 # --- STRING ---
 # Text, written inside quotes
