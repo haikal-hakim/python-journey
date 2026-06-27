@@ -23,11 +23,10 @@ print(width * height)  # 900
 print(4 * 3.75 - 1)  # 14.0
 
 # --- TYPE CONVERSION ---
-# int(), float(), str() are built-in functions to convert data types
-# int() truncates (does NOT round) the decimal part
 print(int(3.9))  # 3 float to int
 print(float(10))  # 10.0  int to float
-print(str(42))  # '42'  int to string
+print(str(42))  # '42' int to string
+# int(), float(), str() are built-in functions to convert data types
 
 # --- COMPLEX NUMBERS ---
 c = 3 + 5j
