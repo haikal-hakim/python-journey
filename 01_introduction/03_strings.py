@@ -1,73 +1,73 @@
-# --- SINGLE QUOTES AND DOUBLE QUOTES ---
-print('Test')  # single quotes
-print("Test")  # double quotes
-print('1993')  # this is string not a number because it is enclosed in quotes
+# --- TANDA KUTIP TUNGGAL DAN GANDA ---
+print('Test')  # tanda kutip tunggal
+print("Test")  # tanda kutip ganda
+print('1993')  # ini string bukan angka karena diapit tanda kutip
 print(type('1993'))  # <class 'str'>
-# The results are the same, consistent use of any quotes
+# Hasilnya sama, gunakan salah satu secara konsisten
 
-# --- ESCAPE CHARACTERS ---
-print('doesn\'t')  # use \' to escape the single quote
-print("doesn't")  # or use double quotes instead
+# --- KARAKTER ESCAPE ---
+print('doesn\'t')  # gunakan \' untuk escape tanda kutip tunggal
+print("doesn't")  # atau gunakan tanda kutip ganda
 
-print("\"Yes,\" he said.")  # use \" to escape the double quote
-print('"Isn\'t," she said.')  # use \' to escape the single quote
+print("\"Yes,\" he said.")  # \" untuk escape tanda kutip ganda
+print('"Isn\'t," she said.')  # \' untuk escape tanda kutip tunggal
 
-# --- SPECIAL CHARACTERS ---
-s = "Hello\nWorld" # \n is a newline
-print(s) # produce two lines of output using print()
+# --- KARAKTER KHUSUS ---
+s = "Hello\nWorld"  # \n adalah baris baru
+print(s)  # menghasilkan dua baris output menggunakan print()
 
-# --- RAW STRINGS ---
-print("C:\tnew\nfolder") # \t is a tab
+# --- RAW STRING ---
+print("C:\tnew\nfolder")  # \t adalah tab
 print(r"C:\new\folder")
-# r is a raw, meaning Python reads the string as is
+# r adalah raw, artinya Python membaca string apa adanya
 
-# --- MULTI-LINE STRINGS ---
-# string usage can span multiple lines, using triple quotes for multiline
-# as well as adding \ after quotes
+# --- STRING MULTI-BARIS ---
+# string bisa mencakup beberapa baris, menggunakan tanda kutip tiga
+# serta menambahkan \ setelah tanda kutip
 print("""\
       Usage: script [OPTIONS]
       -h                        Display this usage message
       -R                        Show the README and exit
       """)
 
-# --- CONCATENATION & REPETITION ---
+# --- PENGGABUNGAN & PENGULANGAN ---
 print(7 * "bla" + "hh")  # blablablablablahh
-# '+' concatenates, '*' repeats
+# '+' menggabungkan, '*' pengulangan
 
-# --- CONCATENATION & CONTINUATION ---
+# --- PENGGABUNGAN & KELANJUTAN ---
 print("Herukopter")
 print("Heru" "kopter")
 
-x = ("Write the words in brackets, "
-     "so Python knows that this text is continued.")
+x = ("Tulis kata-kata dalam kurung, "
+     "agar Python tahu bahwa teks ini dilanjutkan.")
 print(x)
-# the use of literal concatenation is to break up long strings to make them more readable
+# penggunaan literal concatenation untuk memecah string panjang agar lebih mudah dibaca pada kode
 
-# use '+' to concatenate variables
+# '+' untuk menggabungkan variabel
 x = "Heru"
 print(x + "kopter")  # Herukopter
 
-# --- INDEXING ---
+# --- INDEKS ---
 word = "Python"
-# first character having index 0
+# karakter pertama memiliki indeks 0
 print(word[0])  # P
 print(word[5])  # n
-# negative index counts from the end (right to left)
+# indeks negatif dihitung dari akhir (kanan ke kiri)
 print(word[-1])  # n
 print(word[-2])  # o
 
-# --- SLICING ---
+# --- PEMOTONGAN ---
 word = "Alice"
-# word[start:stop] when to start and when to stop
-print(word[0:2])  # Al from position 0 (included) to 2 (excluded)
-print(word[1:9])  # lice Python handle out of range slice
+# word[start:stop] kapan mulai dan kapan berhenti
+print(word[0:2])  # Al dari posisi 0 (uncluded) ke 2 (excluded)
+print(word[1:9])  # lice Python menangani slice di luar jangkauan
 
-print(word[:2])  # Al from the beginning to position 2
-print(word[1:5])  # lic from position 1 to 5
-print(word[-3:5])  # ce from the second-last to the end
+print(word[:2])  # Al dari awal ke posisi 2
+print(word[1:5])  # lice dari posisi 1 ke 5
+print(word[-3:5])  # ce dari kedua-terakhir ke akhir
 
-print("B" + word[1:])  # Blice change the first character of the string
-print(word[:2] + "Z")  # AlZ change the last character of the string
+print("B" + word[1:])  # Blice mengubah karakter pertama string
+print(word[:2] + "Z")  # AlZ mengubah karakter terakhir string
 # +---+---+---+---+---+
 # | A | l | i | c | e |
 # +---+---+---+---+---+
@@ -75,6 +75,6 @@ print(word[:2] + "Z")  # AlZ change the last character of the string
 #  -5  -4  -3  -2  -1
 
 # --- LEN() ---
-# The built-in function len() returns the length of a string
+# Fungsi bawaan len() untuk mengetahui banyaknya karakter dalam sebuah string
 x = "abcdefghijklmnopqrstuvwxyzaaaaaaaaa"
-print(len(x)) # 35
+print(len(x))  # 35
