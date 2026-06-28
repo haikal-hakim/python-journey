@@ -30,7 +30,7 @@ print("""\
       -R                        Show the README and exit
       """)
 
-# --- CONCAETENATION & REPETITION ---
+# --- CONCATENATION & REPETITION ---
 print(7 * "bla" + "hh")  # blablablablablahh
 # '+' concatenates, '*' repeats
 
