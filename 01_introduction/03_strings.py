@@ -56,6 +56,11 @@ print(word[5])  # n
 # indeks negatif dihitung dari akhir (kanan ke kiri)
 print(word[-1])  # n
 print(word[-2])  # o
+# +---+---+---+---+---+
+# | A | l | i | c | e |
+# +---+---+---+---+---+
+#   0   1   2   3   4
+#  -5  -4  -3  -2  -1
 
 # --- SLICE ---
 # slicing mengambil beberapa item (rentang) menggunakana [start:stop]
@@ -70,11 +75,11 @@ print(word[-3:5])  # ice dari ketiga-terakhir ke posisi 5
 # penggunaan immutable
 print("B" + word[1:])  # Blice mengubah karakter pertama string
 print(word[:2] + "Z")
-# +---+---+---+---+---+
-# | A | l | i | c | e |
-# +---+---+---+---+---+
-#   0   1   2   3   4
-#  -5  -4  -3  -2  -1
+#  +---+---+---+---+---+
+#  | A | l | i | c | e |
+#  +---+---+---+---+---+
+#  0   1   2   3   4   5
+# -5  -4  -3  -2  -1
 
 # --- LEN() ---
 # Fungsi bawaan len() untuk mengetahui banyaknya karakter dalam sebuah string
